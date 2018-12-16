@@ -1,0 +1,121 @@
+@import "variables"
+@import "mixin"
+
+
+
+
+
+@include media-breakpoint-down(xs)
+  .history-agency
+    & .main-content
+      & h1
+        font-size: 18px
+      & h2
+        font-size: 15px
+    & .bit-history
+      & h3
+        text-align: center
+  .choose-us
+    & .col-choose
+      & .col
+          margin: 0 auto
+          width: 80%
+          text-align: justify
+          padding-top: 10px
+          padding-bottom: 10px
+  .portfolio
+    & .img-xs-center
+      text-align: center
+    & img
+      max-width: 70%
+  footer
+    & .container
+      padding-bottom: 120px
+    & nav
+      & li
+        font-size: 18px
+        & span
+          display: none
+      & .social
+        & ul
+          flex-direction: row
+      & .navbar-brand
+          font-size: 10px
+  .information
+    & .get-to
+      padding-bottom: 50px
+      & h6
+        font-size: 20px
+      & button
+        height: 30px
+    & .sent-email
+      width: 100%
+      & h6
+        font-size: 20px
+      & p
+        font-size: 10px
+
+
+
+
+@include media-breakpoint-down(sm)
+  .history-agency
+    & .main-content
+      & h1
+        font-size: 20px
+      & h2
+        font-size: 15px
+    & .bit-history
+      & h3
+        text-align: center
+  .choose-us
+    & .col-choose
+      & .col
+        padding-bottom: 20px
+  .portfolio
+    & .img-xs-center
+      text-align: center
+    & img
+      max-width: 70%
+  footer
+    & .container
+      padding-bottom: 120px
+    & nav
+      & li
+        font-size: 18px
+    & span
+      display: none
+    & .social
+      & ul
+        flex-direction: row
+    & .navbar-brand
+        font-size: 10px
+  .information
+    & .get-to
+      padding-bottom: 50px
+      & h6
+        font-size: 20px
+      & button
+        height: 30px
+    & .sent-email
+      width: 100%
+      & h6
+        font-size: 20px
+      & p
+        font-size: 10px
+
+
+@include media-breakpoint-down(md)
+  footer
+    & .container
+      padding-bottom: 120px
+    & nav
+      & li
+        font-size: 20px
+    & span
+      display: none
+    & .social
+      & ul
+        flex-direction: row
+    & .navbar-brand
+      font-size: 18px

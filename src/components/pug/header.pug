@@ -1,15 +1,20 @@
 header.header
-    //.pos-f-t
-    //    #navbarToggleExternalContent.collapse
-    //        .bg-dark.p-4
-    //            h5.text-white.h4 Collapsed content
-    //            span.text-muted Toggleable via the navbar brand.
-    //    nav.navbar.navbar-dark.bg-dark
-    //        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarToggleExternalContent', aria-controls='navbarToggleExternalContent', aria-expanded='false', aria-label='Toggle navigation')
-    //            span.navbar-toggler-icon
-
-
     nav.navbar.collapse-my
         a.navbar-brand-my(href='#') AKAD.
-        button.btn-navbar-toggler
+        button.btn-navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
                 span.btn-navbar
+        #navbarNav.collapse.navbar-collapse
+            .wrap-ul
+                ul.navbar-nav.text-center
+                    li.nav-item.link-pages
+                        a.nav-link(href='#') HOME
+                    li.nav-item.link-pages
+                        a.nav-link(href='#') ABOUT US
+                    li.nav-item.link-pages
+                        a.nav-link(href='#') SERVICES
+                    li.nav-item.link-pages
+                        a.nav-link(href='#') PORTFOLIO
+                    li.nav-item.link-pages
+                        a.nav-link(href='#') BLOCK
+                    li.nav-item.link-pages
+                        a.nav-link(href='#') CONTACT US

@@ -1,4 +1,5 @@
 @import "variables"
+@import "mixin"
 
 
 .history-agency
@@ -6,10 +7,9 @@
   -webkit-background-size: 100% 100%
   background-size: 100% 100%
   background-repeat: no-repeat
-
-
   & .main-content
       padding-top: 168px
+
       & p
         width: 90px
         height: 30px
@@ -24,12 +24,14 @@
         margin: auto
         padding: 30px 45px
         font-size: 50px
+        transition: .3s ease
       & h2
         width: 60%
         color: $gray-content
         font-size: $font-size-base
         margin: auto
         padding-top: 30px
+        transition: .3s ease
   & .img-content
     position: relative
     top: 100px
@@ -116,3 +118,4 @@ h4
   margin: auto
   padding-top: 20px
   padding-bottom: 100px
+

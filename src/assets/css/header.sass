@@ -1,12 +1,9 @@
 @import "variables"
 .collapse-my
   width: 100%
-  //height: 70px
-  //background: #000
   position: absolute
   left: 0
   top: 0
-
 
 .navbar-brand-my
   position: relative
@@ -22,6 +19,9 @@
   position: absolute
   top: 49px
   right: 80px
+  z-index: 1002
+  &:focus
+    outline: none
 
 .btn-navbar
   padding: 0
@@ -34,4 +34,46 @@
   background: no-repeat center center
   background-size: 100% 100%
   background-image: url(../../assets/img/header/icon-toggle.png)
+  background-position: 0 0
   cursor: pointer
+  transition: .3s ease
+  &:hover
+    background-position: 0 -10px
+#navbarNav
+  z-index: 1001
+  overflow: hidden
+  position: absolute
+  width: 100%
+  left: 0
+  top: 0
+  & .wrap-ul
+    width: 100%
+    height: 2000px
+    background-color: rgba(0, 0, 0, 0.59)
+  & ul
+    color: #ffffff
+    margin: 0 auto
+    width: 50%
+
+.link-pages
+  position: relative
+  font-size: 30px
+  padding: 15px
+  left: 0
+  transition: .5s ease
+  &:hover
+    left: -15px
+  & a
+    color: #ffffff
+    transition: .3s ease
+    &:hover
+      color: $blue-bg
+  &:nth-child(1)
+    padding-top: 150px
+
+.btn-close
+  background-image: url(../../assets/img/header/close.png) !important
+  &:hover
+    opacity: 0.7
+    background-position: 0 0
+    
