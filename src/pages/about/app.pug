@@ -1,5 +1,37 @@
 extends  ../../components/pug/loyout
 
 block content
-    section
-        h1 hello World
+    section.col-12.about
+        .container
+            .row
+                .col-12.text-center.main-content
+
+                    h1
+                        | BLOG POSTS
+
+                    h2
+                        | HOME/BLOG
+                .col-9
+                    .card
+                        img.card-img-top(src='../../assets/img/about/card-photo.png', alt='Card image cap')
+                        .card-body
+                            .date-comet-like
+                                li
+                                    span.mount OCTOBER
+                                    span.data  13
+                                    span.year  2018
+                                li
+                                    img(src='../../assets/img/about/comment-ico.png')
+                                    span.badge.badge-secondary.comment 15
+                                li
+                                    button.btn.btn-primary.coment.like(type='button')
+                                        img(src='../../assets/img/about/like-ico.png')
+                                        span.badge.badge-light 9
+                                        span.sr-only unread messages
+
+                            h3.card-title THE BIG LEAGUES OUR TURN STRAIGHTNIN
+                            p.card-text
+                                | Some quick example text to build on the card title and make up the bulk of the card's content.
+                            a.btn.btn-primary(href='#') continue reading >
+
+                .col-3

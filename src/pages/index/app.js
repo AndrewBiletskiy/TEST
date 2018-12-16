@@ -28,4 +28,4 @@ function changeBtnHeader(){
     changeClass(btnHeader, spanHeader, 'btn-close')
 
 }
-
+export {changeBtnHeader}
