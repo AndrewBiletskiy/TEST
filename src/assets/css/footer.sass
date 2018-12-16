@@ -1,0 +1,99 @@
+@import "variables"
+
+@mixin bg-pos($xPos)
+  background-position: $xPos
+
+
+footer
+  background: $blue-bg
+  transition: .3s ease
+
+.information
+  height: 330px
+  padding-top: 50px
+  & .get-to
+    & h6
+      color: #ffffff
+      font-size: 30px
+    & button
+      background: #ffffff
+      color: $blue-bg
+      border: none
+      height: 50px
+      width: 165px
+      font-size: 14px
+  & .sent-email
+    width: 555px
+    height: 230px
+    background: #ffffff
+    & h6
+      color: $gray-800
+      font-size: 20px
+      &:nth-child(1)
+        padding-top: 20px
+    & p
+      font-size: 16px
+      color: $gray-content
+    & .form-inline
+      padding-top: 30px
+      & .form-group
+        margin: 0 !important
+        width: 72%
+        & input
+          width: 100%
+          background: transparent
+          border-left: 0.5px solid $gray-300
+          border-top: 0.5px solid $gray-300
+          border-bottom: 0.5px solid $gray-300
+          border-right: none
+          border-radius: 0
+          height: 50px
+      & button
+        width: 28%
+        height: 50px
+        background: $blue-bg
+        color: #ffffff
+        border: none
+        border-radius: 0
+
+.nav-footer
+  padding-top: 50px
+  & span
+    padding: 0 15px
+    line-height: 40px
+    height: 40px
+    color: $gray-content
+  & .navbar-brand
+    color: $gray-content
+
+.wrap-social
+  background: #ffffff
+  min-height: 55px
+.social
+  float: right
+.social-ico
+  //padding: 10px
+  max-width: 30px
+  max-height: 16px
+  min-height: 16px
+  overflow: hidden
+  background-image: url(../../assets/img/footer/social-ico/socialIco.png)
+  margin: 10px
+  & a
+    padding-right: 10px !important
+    padding-left: 10px !important
+  &:nth-child(1)
+    @include bg-pos(175px)
+  &:nth-child(2)
+    @include bg-pos(150px)
+  &:nth-child(3)
+    @include bg-pos(116px)
+  &:nth-child(4)
+    @include bg-pos(83px)
+  &:nth-child(5)
+    @include bg-pos(49px)
+  &:nth-child(6)
+    @include bg-pos(20px)
+  &:hover
+    opacity: 0.7
+

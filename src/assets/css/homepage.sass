@@ -58,13 +58,7 @@
   & .choose
     padding-top: 260px
     color: $gray-content
-    & h4
-      width: 80%
-      color: $gray-content
-      font-size: $font-size-base
-      margin: auto
-      padding-top: 20px
-      padding-bottom: 100px
+
   & .col-choose
     line-height: 30px
     color: $gray-content
@@ -82,7 +76,43 @@
 
     & .first-block
       padding-bottom: 40px
+.portfolio
+  padding-top: 160px
+  padding-bottom: 150px
+  line-height: 40px
+  & h3
+    color: $gray-content
+    padding-bottom: 49px
+  & img
+    padding: 15px
+    transition: .3s ease
+    &:hover
+      filter: blur(2px)
+
+
+
+.btn-portfolio
+  background: transparent
+  border: none
+  color: $gray-content
+  position: relative
+  transition: .3s ease
+  padding: 0 20px
+  left: 0
+  &:hover
+    background: $blue-bg
+    color: #ffffff
+    border: none
+    left: -10px
+
 .bit-bg-span
     background-image: url(../../assets/img/homepage/bg-content-h3.png)
     background-position: 0 16px
     background-repeat: no-repeat
+h4
+  width: 80%
+  color: $gray-content
+  font-size: $font-size-base
+  margin: auto
+  padding-top: 20px
+  padding-bottom: 100px
